@@ -1,191 +1,335 @@
-
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-        .carousel-inner {
-            background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-        }
-
-        .navimg {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1;
-        }
-
-        .navin {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 1;
-        }
-
-        .nav-links ul li {
-            list-style: none;
-            display: inline-block;
-            padding: 10px 25px;
-            font-weight: 600;
-            position: relative;
-            transition: 0.5s;
-        }
-
-        .nav-links ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 22px;
-        }
-
-        .nav-links ul li:hover {
-            background: #ffb833;
-            border-radius: 25px;
-        }
-
-        .navin .fa {
-            display: none;
-        }
-
-        @media(max-width: 700px) {
-            .navin {
-                top: 26px;
-                right: 25px;
-            }
-
-            .nav-links ul li {
-                display: block;
-            }
-
-            .nav-links {
-                position: fixed;
-                background: rgba(0, 0, 0, 0.85);
-                height: 100vh;
-                width: 100%;
-                top: 0px;
-                right: 100%;
-                text-align: center;
-                z-index: 2;
-                transition: 0.5s;
-            }
-
-            .navin .fa {
-                display: block;
-                color: #fff;
-                font-size: 25px;
-                cursor: pointer;
-            }
-
-            .fa-times {
-                float: right;
-                padding: 29px 29px 0px 0px;
-            }
-
-            .nav-links ul {
-                margin: 55% 25px 0px 0px;
-            }
-
-            .nav-links ul li a {
-                font-size: 23px;
-            }
-
-            .nav-links ul li a:hover {
-                color: #fff;
-            }
-
-            .navimg {
-                left: 10px;
-                top: 10px;
-            }
-        }
-
-        @media (max-width: 700px) {
-            .carousel-item img {
-                height: 350px;
-            }
-        }
-
-        @media (min-width: 701px) {
-            .carousel-item img {
-                height: 30rem;
-            }
-        }
-    </style>
-</head>
+<!DOCTYPE html>
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Bhushan Magar Foundation</title>
+<meta name="description" content="Bhushan Magar Foundation was founded by Dr. Bhushan Magar with a perspective to treat and serve people selflessly." />
+<link rel="icon" type="image/png" href="img/bmagarf-logo1.png">
+<script src="https://kit.fontawesome.com/c4ba363eb7.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
 
 <body>
+    <!-- slider -->
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators" id="ci">
-            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
+    <section style="margin: 0px 0px 45px">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators" id="ci">
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slide1.jpg" class="d-block w-100"
+                        alt="bhushan magar foundation's image 1">
+                    <div class="carousel-caption">
+                        <h1 style="color: whitesmoke; font-size: 1.5rem; font-weight: 900;">डॉ. भूषणदादा मगर (पाटील)
+                            फाउंडेशन</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide2.jpg" class="d-block w-100"
+                        alt="bhushan magar foundation's image 2">
+                    <div class="carousel-caption">
+                        <h2 style="color: whitesmoke; font-size: 1.25rem; font-weight: 900;">तरुणाईला मार्गदर्शन करतांना
+                            डॉ.
+                            भूषणदादा मगर (पाटील).</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide3.jpg" class="d-block w-100"
+                        alt="bhushan magar foundation's image 3">
+                    <div class="carousel-caption">
+                        <h2 style="color: whitesmoke; font-size: 1.5rem; font-weight: 900;"></h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide4.jpg" class="d-block w-100"
+                        alt="bhushan magar foundation's image 4">
+                    <div class="carousel-caption">
+                        <h2 style="color: whitesmoke; font-size: 0.85rem; font-weight: 900;">कठीण प्रसंगी आर्थिक मदतीचा
+                            हात
+                            देऊन संकटावर मात करायला मदत करताना डॉ. भूषणदादा मगर (पाटील).</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="log"><a href="#"><img src="img/bmagarf-logo1.png" alt="bhushan magar foundation's logo" width="85px"
+                        height="65px" title="Home"></a></div>
+            <div class="mainu">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" style="font-size: 30px;" onclick="hideMenu();"></i>
+                    <ul style="text-align: center;">
+                        <li><a href="#about" onclick="hideMenu()">About</a></li>
+                        <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
+                        <li><a href="#gallery" onclick="hideMenu()">Gallery</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu();"></i>
+            </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/slide1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h1 style="color: whitesmoke; font-size: 1.5rem; font-weight: 900;">डॉ. भूषणदादा मगर (पाटील)
-                        फाउंडेशन</h1>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h2 style="color: whitesmoke; font-size: 1.25rem; font-weight: 900;">तरुणाईला मार्गदर्शन करतांना डॉ. भूषणदादा मगर (पाटील).</h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h2 style="color: whitesmoke; font-size: 1.5rem; font-weight: 900;"></h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide4.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h2 style="color: whitesmoke; font-size: 0.85rem; font-weight: 900;">कठीण प्रसंगी आर्थिक मदतीचा हात देऊन संकटावर मात करायला मदत करताना डॉ. भूषणदादा मगर (पाटील).</h2>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        <div class="navimg"><a href="#"><img src="img/bmagarf-logo1.png" alt="our-logo" width="85px" height="65px"
-                    title="Home"></a></div>
-        <div class="navin">
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" style="font-size: 30px;" onclick="hideMenu();"></i>
-                <ul style="text-align: center;">
-                    <li><a href="#about" onclick="hideMenu()">About</a></li>
-                    <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
-                    <li><a href="#gallery" onclick="hideMenu()">Gallery</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu();"></i>
-        </div>
-    </div>
+    </section>
 
-    <!-- document.getElementById("ci").style.display = "flex"; document.getElementById("ci").style.display = "none"; -->
+    <!-- About -->
+    <section id="about">
+        <h2 style="margin-bottom: 25px;">ABOUT <div
+                style="background-color: #ffb833; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
 
-    <script src="https://kit.fontawesome.com/c4ba363eb7.js" crossorigin="anonymous"></script>
+        <div class="roo">
+            <div class="columnp">
+                <p style="text-indent: 25px; text-align: justify; width: 100%;">Dr. Bhushan Magar Sir was born in a
+                    village with a farming background. His father was an engineer in the Water Resources Department of
+                    the Government of Maharashtra. His school life was happening in places like Pachora. Also his
+                    college education was done at Jayhind College in Dhule. After completing their medical education
+                    from Maratha Vidya Prasarak Mandal, Nashik, They started there medical service as a Medical Officer
+                    from Niphad, Dist. Nashik.
+                </p>
+            </div>
+
+            <div class="columnp">
+                <p style="text-indent: 25px; text-align: justify; width: 100%;">Dr. Bhushan Magar set up Vighnaharta
+                    Multispeciality Hospital in Pachora to provide better medical services in the city. Many facilities
+                    are under one roof and poor patients are being served free of cost through various government
+                    schemes. Also Dr. Bhushan Magar Sir is interested in social, educational and sports fields along
+                    with health services, in the year 2013, He established Bhushan Magar (Patil) Foundation, thousands
+                    of people are being helped selflessly through this organization.
+                </p>
+            </div>
+
+            <div class="columnp cl3">
+                <p style="text-indent: 25px; text-align: justify; width: 100%;">Dr. Bhushan Magar's popularity and
+                    fragrance of medical service has spread everywhere. The idea of doing something different for the
+                    society and the patients is always on their minds. He is of the view that an independent medical
+                    college should be set up in pachora-bhadgaon area in future and an independent cancer hospital
+                    should be set up to eradicate cancer.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+
+
+    <!-- Wcu -->
+
+    <section>
+
+        <h2>WE <div
+                style="background-color: #ffb833; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+
+        <div class="roo">
+
+            <div class="colwcu">
+                <div class="wcu-col" style="width: 100%;">
+                    <div class="wcu-icon">
+                        <img src="img/h1.png" alt="bhushan magar foundation's highlight 1"
+                            width="65px" height="80px" style="padding-top: 18px;">
+                    </div>
+                    <h3>Always ready to help</h3>
+ <p>We doesn't wait for working hours.</p>
+                </div>
+            </div>
+
+            <div class="colwcu">
+                <div class="wcu-col" style="width: 100%;">
+                    <div class="wcu-icon">
+                        <img src="img/h2.png" alt="bhushan magar foundation's highlight 2"
+                            width="55px" height="80px" style="padding-top: 25px;">
+                    </div>
+                    <h3>Bringing joy to everyone</h3>
+                    <p>We simply try delivering it to every one.</p>
+                </div>
+            </div>
+
+            <div class="colwcu wcucl3">
+                <div class="wcu-col" style="width: 100%;">
+                    <div class="wcu-icon">
+                        <img src="img/h3.png" alt="bhushan magar foundation's highlight 3"
+                            width="60px" height="80px" style="padding-top: 24px;">
+                    </div>
+                    <h3>No discrimination</h3>
+                    <p>We believe Nothing is bigger than humanity.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr id="gallery">
+
+    <!-- gallery -->
+
+    <section>
+        <h2>GALLERY <div
+                style="background-color: #ffb833; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+        <div class="roo">
+            <div class="columng">
+                <img src="img/g1.jpg" alt="bhushan magar foundation's gallery image 1"
+                    style="width:100%">
+                <img src="img/g2.jpg" alt="bhushan magar foundation's gallery image 2"
+                    style="width:100%">
+                <img class="smlg" src="img/g7.jpg"
+                    alt="vighnaharta hospital pachora image-1" style="width:100%">
+                <img class="md" src="img/g3.jpg"
+                    alt="bhushan magar foundation's gallery image 3 for medium screen" style="width:100%">
+            </div>
+
+            <div class="columng">
+                <img src="img/g4.jpg" alt="bhushan magar foundation's gallery image 4"
+                    style="width:100%">
+                <img src="img/g5.jpg" alt="bhushan magar foundation's gallery image 5"
+                    style="width:100%">
+                <img class="smlg" src="img/g8.jpg"
+                    alt="vighnaharta hospital pachora image-2" style="width:100%">
+                <img class="md" src="img/g6.jpg"
+                    alt="bhushan magar foundation's gallery image 6 for medium screen" style="width:100%">
+            </div>
+
+            <!-- 451 t0 900 -->
+            <div class="columng md" style="margin-bottom: 30px;">
+                <img src="img/g7.jpg"
+                    alt="vighnaharta hospital pachora image-3 for medium screen" style="width:100%">
+            </div>
+            <div class="columng md" style="margin-bottom: 30px;">
+                <img src="img/g8.jpg"
+                    alt="vighnaharta hospital pachora image-2 for medium screen" style="width:100%">
+            </div>
+            <!-- 450=> / 901=< -->
+            <div class="columng smlg">
+                <img src="img/g3.jpg" alt="bhushan magar foundation's gallery image 7"
+                    style="width:100%">
+                <img src="img/g6.jpg" alt="bhushan magar foundation's gallery image 8"
+                    style="width:100%">
+                <img src="img/g9.jpg" alt="vighnaharta hospital pachora image-3"
+                    style="width:100%">
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 5%;">
+            <a href="img/bmagarf.pdf"
+                style="font-size: 1.25rem; background: #ffb833; color: #fff; padding: 12px 20px; border-radius: 50px; text-decoration: none;">View
+                more</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section style="text-align: center;">
+        <h2>MEDIA <div
+                style="background-color: #ffb833; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+        <iframe src="https://www.youtube.com/embed/DXQgjp0pZcI" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <hr>
+
+    <!-- reviews -->
+
+    <section class="testimonials">
+        <h2>REVIEWS <div
+                style="background-color: #ffb833; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+
+        <div class="rowt">
+            <div class="columnt" data-aos="zoom-in-up">
+                <img src="img/3.png" alt="">
+                <div>
+                    <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit
+                        atque consequatur.</p>
+                    <h3>Nil Jain</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="columnt" data-aos="zoom-in-up">
+                <img src="img/3.png" alt="">
+                <div>
+                    <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit
+                        atque consequatur.</p>
+                    <h3>Sanket Patil</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr id="contact">
+
+    <!-- contact -->
+
+    <section class="contact" style="text-align:center">
+        <h2>CONTACT <div
+                style="background-color: #ffb833; height: 4px; width: 50px; margin: 3px auto 12px; border-radius: 5px;">
+            </div>
+        </h2>
+        <em>We'd love your feedback!</em><br><br>
+        <h3>WALK IN</h3>
+        <a
+            href="https://www.google.com/maps/dir//Deshmukh+Wadi,+Sambhaji+Nagar,+Pachora,+Maharashtra+424201/@20.6673915,75.3552891,16z/data=!4m6!4m5!1m0!1m2!1m1!1s0x3bd968109a738161:0x4f7953a4b41c969!3e0"><i
+                class="fa fa-map-marker" style="width:30px"></i>Dr. Bhushan Magar Foundation<br>Deshmukh
+            Wadi,<br>Pachora-424201</a>
+        <h4 style="margin:20px 0px; color:#ffb833;">OR</h4>
+        <h3>CALL US</h3>
+        <a href="tel:+91 9970138111"><i class="fa fa-phone-alt" style="font-size: 19px"></i> +91 9970138111</a><br>
+        <a href="mailto:dr.bmpfoundation888@gmail.com"><i class="fa fa-envelope" style="font-size: 19px"></i>
+            dr.bmpfoundation888@gmail.com</a>
+    </section>
+
+    <hr>
+
+    <!--Footer-->
+
+    <section class="footer" style="text-align: center; margin-bottom: -5px;">
+        <h4>FOLLOW US ON</h4>
+        <div class="icons" style="margin: -5px 0px;">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>Copyright © 2022 Dr. Bhushan Magar Foundation.. All Rights Reserved<br>
+            Made with <i class="fa fa-heart"></i> by KSTECH</p>
+    </section>
 
     <script>
+
         var navLinks = document.getElementById("navLinks")
+
         function showMenu() {
             navLinks.style.right = "0";
             document.getElementById("ci").style.zIndex = "1";
@@ -199,6 +343,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
